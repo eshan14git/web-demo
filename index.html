@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0ded7181e6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Header Section -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="pics/Screenshot_2024-11-11_094607-removebg-preview.png" class="logo" alt="Logo">
+            <ul id="sidemenu">
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i> <!-- Close button -->
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul> 
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i> <!-- Hamburger menu icon -->
+        </nav>
+        <div class="header-text">
+            <p>University student</p>
+            <h1>Hello, I'm <span>Eshan Menuka</span> <br>from Sri Lanka</h1>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <!-- Image Section -->
+            <div class="about-col-1">
+                <img src="pics/72b5897d-274d-4fc9-b3b5-5715ea078580.png" alt="Profile Image">
+            </div>
+
+            <!-- Text Section -->
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I am currently pursuing a degree in Cloud Computing at SLTC Research University, where I am diving deep into cutting-edge technologies like cloud infrastructure, virtualized systems, and big data management. With a strong passion for topics such as cloud security, distributed computing, and machine learning, I am eager to contribute to the future of technology. Beyond my academic interests, I have a profound love for football, which has always been an integral part of my life. My goal is to not only complete my degree but also to advance my career in the world of football, combining my academic knowledge with my passion for the sport to reach new heights.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Front-end/Back-end Development</li>
+                        <li><span>Multimedia Editing</span><br>Specialist in Photo and Video Editing</li>
+                        <li><span>Sports</span><br>Footballer in Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023-present</span><br>Member of Frontend Mentor and Hashnode</li>
+                        <li><span>2019-present</span><br>YouTube content creation</li>
+                        <li><span>2020-present</span><br>Football league player</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-present</span><br>SLTC Research University</li>
+                        <li><span>2014-2022</span><br>Mahinda Rajapaksha College</li>
+                        <li><span>2024-present</span><br>Aquinas Higher Education</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Services Section -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1> <!-- Ensure this is above the services list -->
+        <div class="services-list">
+            <div>
+                <i class="fa-regular fa-keyboard"></i>
+                <h2>Web design</h2>
+                <p>I can design modern, responsive websites that combine aesthetics with functionality. Whether it's a personal blog, portfolio, or business site, I'll create a tailored solution to meet your unique needs.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h2>Graphics design</h2>
+                <p>I can craft eye-catching graphics and visuals, from logos to social media content. Let’s bring your brand’s vision to life with designs that perfectly fit your needs.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Multimedia editing</h2>
+                <p>I can expertly edit photos and videos to enhance your content, delivering polished visuals that capture attention and elevate your brand for all your multimedia needs.</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Section -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="pics/image one.png">
+                <div class="layer">
+                    <h3>My contents</h3>
+                    <p>Discover my collection of edited videos, photos, and creative projects — crafted with passion and a touch of creativity!</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pics/image two.png">
+                <div class="layer">
+                    <h3>My websites</h3>
+                    <p>Check out the websites I've crafted — blending creativity with clean, responsive design!</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pics/image three.png">
+                <div class="layer">
+                    <h3>My graphics designs</h3>
+                    <p>Explore my graphic design creations — where bold visuals meet imaginative storytelling!</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">see more...</a>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>eshanmenuka9@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0723216921</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/eshanmenuka9?igsh=MXc5YWhrMGZ4Z3h1dw=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="www.linkedin.com/in/eshan-menuka-559795338"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="pics/Error 404.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Eshan.Created with the help of tutorials on youtube  <i class="fa-solid fa-handshake-angle"></i></p>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        // Remove 'active-link' class from all tab links
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        // Remove 'active-tab' class from all tab contents
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        // Add 'active-link' to the clicked tab and 'active-tab' to the corresponding content
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>    
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";  // Open the side menu
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";  // Close the side menu
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx3DoHTb1tHEba2--QTZ7Iv0LSBaRWdd139L9l5FTe-ckEiDP8ijgjweuceqwSnZ1KLPA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "message received"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
